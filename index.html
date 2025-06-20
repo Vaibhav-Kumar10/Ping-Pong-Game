@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Ping Pong Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <div id="game-container">
+    <div id="controls">
+      <label for="paddle-select">Paddle:</label>
+      <select id="paddle-select">
+        <option value="normal">Normal</option>
+        <option value="wide">Wide</option>
+        <option value="slim">Slim</option>
+      </select>
+      <label for="theme-toggle">Theme:</label>
+      <button id="theme-toggle">Switch to Dark</button>
+    </div>
+    <div id="scoreboard">
+      <span id="player-score">0</span>
+      <span> : </span>
+      <span id="ai-score">0</span>
+    </div>
+    <canvas id="pingpong" width="800" height="500"></canvas>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
