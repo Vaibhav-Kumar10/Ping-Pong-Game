@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #171717;
+  color: #e0e0e0;
+}
+#game-container {
+  max-width: 820px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.08);
+  padding: 24px 24px 32px 24px;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark #game-container {
+  background: #242526;
+  color: #e0e0e0;
+}
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+#paddle-select {
+  border-radius: 6px;
+  padding: 4px 12px;
+  border: 1px solid #bbb;
+}
+#theme-toggle {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+body.dark #theme-toggle {
+  background: #e0e0e0;
+  color: #242526;
+}
+#scoreboard {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+#pingpong {
+  display: block;
+  margin: 0 auto;
+  background: #3b8450;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.20);
+  transition: background 0.3s;
+}
+body.dark #pingpong {
+  background: #222a36;
+}
